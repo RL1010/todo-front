@@ -1,0 +1,72 @@
+.todo-list {
+  width: 450px;
+  margin-top: 1.5rem;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  transition: var(--transition);
+  padding: 0 0 0.75rem 0.75rem;
+  border-radius: var(--radius);
+  text-transform: capitalize;
+}
+.todo-item:hover {
+  background: var(--clr-grey-10);
+}
+.todo-item:hover .title {
+  color: var(--clr-grey-5);
+}
+.first-part {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.checked-btn {
+  height: 25px;
+  width: 25px;
+  padding: 5px 3px;
+  margin-top: 0.7rem;
+  margin-right: 1.5rem;
+  background: var(--clr-primary-1);
+  border-radius: var(--radius);
+  color: var(--clr-white);
+  border: none;
+  cursor: pointer;
+}
+.title {
+  margin-bottom: 0;
+  color: var(--clr-grey-1);
+  letter-spacing: 2px;
+  transition: var(--transition);
+}
+.btn-container {
+  margin-top: 0.8rem;
+}
+.edit-btn,
+.delete-btn {
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin: 0 0.15rem;
+  transition: var(--transition);
+}
+.edit-btn {
+  color: var(--clr-green-light);
+}
+.edit-btn:hover {
+  color: var(--clr-green-dark);
+}
+.delete-btn {
+  color: var(--clr-red-light);
+}
+.delete-btn:hover {
+  color: var(--clr-red-dark);
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}

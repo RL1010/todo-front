@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+/* Global styles */
+:root {
+  --clr-primary-1: rgb(93, 63, 211);
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-black: #000;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --danger-color: crimson;
+  --clr-white: #fff;
+  --font-family: 'Roboto', sans-serif;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+}
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+.top-background {
+  height: 30vh;
+  width: 100vw;
+  background: linear-gradient(
+      rgba(132, 81, 210, 0.7) 0%,
+      rgba(184, 35, 172, 0.6) 66%
+    ),
+    url('./mountain.jpg') center/cover no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.top-background img {
+  height: 100%;
+}
+.main-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: var(--font-family);
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  box-shadow: var(--dark-shadow);
+  padding: 2rem;
+  width: 500px;
+  margin: 8rem auto;
+}
+.main-content h1 {
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: var(--spacing);
+}
+form {
+  min-width: 450px;
+  max-width: 750px;
+}
+
+.main-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.clear-btn {
+  text-transform: capitalize;
+  width: 10rem;
+  height: 1.5rem;
+  display: grid;
+  align-items: center;
+  background: transparent;
+  border-color: transparent;
+  color: var(--clr-red-light);
+  margin: 0 auto;
+  font-size: 1rem;
+  letter-spacing: var(--spacing);
+  cursor: pointer;
+  transition: var(--transition);
+  margin-top: 1.25rem;
+}
+.clear-btn:hover {
+  color: var(--clr-red-dark);
+}

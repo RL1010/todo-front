@@ -1,0 +1,21 @@
+label {
+  margin-right: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--clr-grey-1);
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+}
+
+.author select {
+  color: var(--primary-color);
+  padding: 0.5rem;
+  width: 200px;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 1rem;
+}
+.author select:hover {
+  border: 2px solid rgb(93, 63, 211);
+  box-shadow: var(--light-shadow);
+}
